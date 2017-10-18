@@ -16,6 +16,6 @@
       ```
 
 * ## Compare the two Objects and returns the count and the number of keys
-   * ### `compare(object1,object2)`
-      * returns the object with keys and count associated with it
-
+   * ### `compareAndCount(object1,object2)`
+      * ```console.log(cj.compareAndCount({'x':1},{'x':2,'y':2}))```
+      * returns : `{ compare: [ 'x' ], count: 1 }`
