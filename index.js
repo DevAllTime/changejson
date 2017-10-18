@@ -1,26 +1,3 @@
-  /*
-    This code is
-    Main Objective : Comparing 2 Objects(JSON) and find the similarity
-    1. Returning the count of similar keys and Count of no similar key's
-    2. Returning the JSON(Object) that has the similary keys -> Return the keys corresponding to the values
-
-
-  */
-
-
-  /*
-    Things to DO:
-    0.  Compare and Count
-    1.  Read   (fs)
-    2.  Write  (fs)
-    3.  Append
-      3.a  Appending to the object with specified key and values (innner Object)
-    4.  Search
-    5.  Sorting (key/Value/Alphabetical)
-    6.  Schema Changing
-    7.  Generating the Routes for the json
-  */
-
 
   /*!
    * json4all
@@ -29,10 +6,9 @@
    * MIT Licensed
    */
 
-   // ---------------------------------------------------------------------------------------------------------
-   // ------------------------------------------ Base Functions -----------------------------------------------
-   // ---------------------------------------------------------------------------------------------------------
+   // More functions are yet to come
 
+   // ------------------------------------------ Base Functions -----------------------------------------------
 
   function compareAndCount(object_1,object_2){
     if(object_1 === undefined || object_2 === undefined){
@@ -138,10 +114,7 @@
 
   }
 
-  // ---------------------------------------------------------------------------------------------------------
   // ------------------------------------------ Exports functions --------------------------------------------
-  // ---------------------------------------------------------------------------------------------------------
-
 
   exports.changeSchema = function(object_1,schema){
     return changeSchema(object_1,schema)
