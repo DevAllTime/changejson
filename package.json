@@ -1,17 +1,24 @@
 {
   "name": "changejson",
   "version": "1.0.0",
-  "description": "",
+  "description": "Change the schema of the json and more manipulations for the JSON",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/SSK001/changejson/blob/master/LICENSE"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SSK001/changejson.git"
+  },
+  "keywords": [
+    "changejson"
+  ],
+  "author": "Santhosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SSK001/changejson/issues"
+  },
+  "homepage": "https://github.com/SSK001/changejson#readme"
 }
