@@ -1,0 +1,17 @@
+{
+  "name": "JSON4all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/SSK0001/json4all/blob/master/LICENSE"
+    }
+  ]
+}

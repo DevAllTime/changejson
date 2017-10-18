@@ -1,2 +1,2 @@
-# changejson
-Change the JSON schema with just a function call
+# json4all
+Single destination for JSON manipulations
