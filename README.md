@@ -1,6 +1,6 @@
 # changejson
 
-![npm](https://img.shields.io/npm/v/changejson.svg) ![license](https://img.shields.io/npm/l/changejson.svg) ![github-issues](https://img.shields.io/github/issues/SSK001/changejson.svg) 
+![npm](https://badge.fury.io/js/changejson.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![github-issues](https://img.shields.io/github/issues/SSK001/changejson.svg) 
 
 Function to manipulate JSON for easy access.
 
