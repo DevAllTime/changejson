@@ -116,7 +116,7 @@
 
   }
 
-  function zipObjArr(arr){
+  function merge(arr){
     
         //error checking
         if(!Array.isArray(arr)) {
@@ -163,4 +163,8 @@
 
   exports.compare = function(object_1,object_2){
     return compare(object_1,object_2)
+  }
+
+  exports.merge = function(array){
+    return merge(array);
   }
