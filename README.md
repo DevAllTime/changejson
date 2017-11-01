@@ -21,23 +21,23 @@
       * returns : `{ compare: [ 'x' ], count: 1 }`
 
 
-## Zip object array
+* ## Merge object array
 
-You can pass in an array of objects and get out a single object, with all the keys from every object and an array of the values
+  * You can pass in an array of objects and get out a single object, with all the keys from every object and an array of the values
 
-ex.
-```
-console.log(zipObjArr([
-    {"first_name":"Frank", "last_name":"Billy", "friends":["Pam", "Susy"]},
-    {"first_name":"Sally", "last_name":"Doe", "middle_name":"Krissy", "friends":["Rick", "Walter"]},
-    {"first_name":"Don"}
-]))
-```
-would return 
+  * **Usage**.
+    ```
+    console.log(merge([
+        {"first_name":"Frank", "last_name":"Billy", "friends":["Pam", "Susy"]},
+        {"first_name":"Sally", "last_name":"Doe", "middle_name":"Krissy", "friends":["Rick", "Walter"]},
+        {"first_name":"Don"}
+    ]))
+    ```
+    would return 
 
-```
-{ first_name: [ 'Frank', 'Sally', 'Don' ],
-  last_name: [ 'Billy', 'Doe' ],
-  friends: [ 'Pam', 'Susy', 'Rick', 'Walter' ],
-  middle_name: [ 'Krissy' ] }
-```
+    ```
+    { first_name: [ 'Frank', 'Sally', 'Don' ],
+      last_name: [ 'Billy', 'Doe' ],
+      friends: [ 'Pam', 'Susy', 'Rick', 'Walter' ],
+      middle_name: [ 'Krissy' ] }
+    ```
