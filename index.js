@@ -2,7 +2,9 @@
   /*!
    * json4all
    * Copyright(c) 2017 Santhosh Kumar
-   * Copyright(c) 2017 Rashwan Evans
+   * Copyright(c) 2017 Rashawn Evans
+   * Copyright(c) 2017 Matthew Schupack
+
    * MIT Licensed
    */
 
@@ -114,6 +116,40 @@
 
   }
 
+  function merge(arr){
+    
+        //error checking
+        if(!Array.isArray(arr)) {
+            throw("argument must be of type 'array'");
+        }
+    
+      return arr.reduce((prev, curr)=>{
+    
+            //error checking
+            if(!curr){
+                return prev;
+            } else if(typeof curr !== "object"){
+                throw ("all elements of array must be objects or null/undefined");
+            }
+    
+    
+        Object.keys(curr).forEach(key=>{
+                //if the key is already in the accumulator just concat new data
+                if(prev[key]){
+                    //
+                    if(!Array.isArray(prev[key])){
+                        prev[key] = [prev[key]];
+                    }
+                    prev[key] = prev[key].concat(curr[key]);
+                } else {
+                    //if key not in accumulator create it
+                    prev[key] = Array.isArray(curr[key]) ? curr[key] : [curr[key]];
+                }
+        })
+        return prev;
+      })
+    }
+
   // ------------------------------------------ Exports functions --------------------------------------------
 
   exports.changeSchema = function(object_1,schema){
@@ -127,4 +163,8 @@
 
   exports.compare = function(object_1,object_2){
     return compare(object_1,object_2)
+  }
+
+  exports.merge = function(array){
+    return merge(array);
   }
