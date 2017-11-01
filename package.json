@@ -1,6 +1,6 @@
 {
   "name": "changejson",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Change the schema of the json and more manipulations for the JSON",
   "main": "index.js",
   "dependencies": {},
