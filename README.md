@@ -2,7 +2,7 @@
 
 ![npm](https://badge.fury.io/js/changejson.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![github-issues](https://img.shields.io/github/issues/SSK001/changejson.svg) 
 
-Function to manipulate JSON for easy access.
+Function's to manipulate JSON for easy access.
 
 [![NPM](https://nodei.co/npm/changejson.png?compact=true)](https://nodei.co/npm/changejson/)
 
