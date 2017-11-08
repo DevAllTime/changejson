@@ -117,22 +117,22 @@
   }
 
   function merge(arr){
-    
+
         //error checking
         if(!Array.isArray(arr)) {
             throw("argument must be of type 'array'");
         }
-    
+
       return arr.reduce((prev, curr)=>{
-    
+
             //error checking
             if(!curr){
                 return prev;
             } else if(typeof curr !== "object"){
                 throw ("all elements of array must be objects or null/undefined");
             }
-    
-    
+
+
         Object.keys(curr).forEach(key=>{
                 //if the key is already in the accumulator just concat new data
                 if(prev[key]){
@@ -150,10 +150,14 @@
       })
     }
 
-  // ------------------------------------------ Exports functions --------------------------------------------
+  // ------------------------------------------ Export functions --------------------------------------------
 
   exports.changeSchema = function(object_1,schema){
     return changeSchema(object_1,schema)
+  }
+
+  exports.upperCaseKeys = function(object1){
+    return upperCaseKeys(object1)
   }
 
 
